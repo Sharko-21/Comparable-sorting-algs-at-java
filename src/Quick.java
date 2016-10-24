@@ -1,5 +1,3 @@
-import java.util.Random;
-
 public class Quick extends SortStructure{
  public static void sort(Comparable[] data) {
         shuffle(data);
@@ -26,12 +24,5 @@ public class Quick extends SortStructure{
         }
         exch(data, lo, j);
         return j;
-    }
-    private static void shuffle(Comparable[] data) {
-        Random random = new Random();
-        for (int i = data.length - 1; i > 0; i--) {
-            int index = random.nextInt(i + 1);
-            exch(data, i, index);
-        }
     }
 }

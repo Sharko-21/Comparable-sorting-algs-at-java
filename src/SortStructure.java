@@ -1,3 +1,5 @@
+import java.util.Random;
+
 class SortStructure {
     private static void sort(Comparable data[]){}
     static boolean less(Comparable v, Comparable w) {
@@ -20,5 +22,12 @@ class SortStructure {
                 return false;
         }
         return true;
+    }
+    static void shuffle(Comparable[] data) {
+        Random random = new Random();
+        for (int i = data.length - 1; i > 0; i--) {
+            int index = random.nextInt(i + 1);
+            exch(data, i, index);
+        }
     }
 }
