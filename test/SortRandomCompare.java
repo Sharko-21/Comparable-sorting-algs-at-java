@@ -12,6 +12,7 @@ public class SortRandomCompare {
         if (sortAlg.equals("mergebu")) MergeBU.sort(data);
         if (sortAlg.equals("quick")) Quick.sort(data);
         if (sortAlg.equals("quick3")) Quick3.sort(data);
+        if (sortAlg.equals("heap")) Heap.sort(data);
         return (System.currentTimeMillis() - start) / 1000.0;
     }
     static double getRandomInputTime(String sortAlg, int N, int T) {
@@ -30,7 +31,7 @@ public class SortRandomCompare {
     public static void main(String[] args) {
         int t = 10;
         System.out.println("Random numbers test: ");
-        for (int n = 1000; n < Math.pow(2, 100); n*=10) {
+        for (int n = 1000; n < Math.pow(2, 100); n*=5) {
             System.out.println(n + ": ");
             System.out.println("Bubble sort: " + SortRandomCompare.getRandomInputTime("bubble", n, t));
             System.out.println("Selection sort: " + SortRandomCompare.getRandomInputTime("selection", n, t));
@@ -41,6 +42,7 @@ public class SortRandomCompare {
             System.out.println("MergeBU sort: " + SortRandomCompare.getRandomInputTime("mergebu", n, t));
             System.out.println("Quick sort: " + SortRandomCompare.getRandomInputTime("quick", n, t));
             System.out.println("Quick3 sort: " + SortRandomCompare.getRandomInputTime("quick3", n, t));
+            System.out.println("Heap sort: " + SortRandomCompare.getRandomInputTime("heap", n, t));
             System.out.println();
         }
 
