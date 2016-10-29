@@ -1,7 +1,8 @@
 import java.util.Random;
 
-class Sort {
-    static void sort(Comparable data[]){}
+abstract class Sort implements ISort{
+
+    public static void sort(Comparable data[]){}
     static boolean less(Comparable v, Comparable w) {
         return v.compareTo(w) < 0;
     }

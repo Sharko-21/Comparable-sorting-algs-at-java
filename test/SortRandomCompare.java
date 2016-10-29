@@ -3,7 +3,7 @@ import java.util.Random;
 public class SortRandomCompare {
     private static double getTime(String sortAlg, Double[] data) {
         long start = System.currentTimeMillis();
-        if (sortAlg.equals("bubble")) Bubble.sort(data);
+        if (sortAlg.equals("bubble")) Sort.sort(data);
         if (sortAlg.equals("selection")) Selection.sort(data);
         if (sortAlg.equals("insertion")) Insertion.sort(data);
         if (sortAlg.equals("shell")) Shell.sort(data);
