@@ -1,4 +1,4 @@
-public class Selection extends SortStructure{
+public class Selection extends Sort {
 
      public static void sort(Comparable data[]) {
          int min;

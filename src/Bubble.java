@@ -1,4 +1,4 @@
-public class Bubble extends SortStructure{
+public class Bubble extends Sort {
     public static void sort(Comparable data[]) {
         for (int i = 1; i < data.length; i++) {
             for (int j = 0; j < i; j++) {

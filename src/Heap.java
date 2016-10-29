@@ -1,4 +1,4 @@
-public class Heap extends SortStructure{
+public class Heap extends Sort {
     public static void sort(Comparable[] data) {
         int n = data.length;
         for (int i = n/2; i >= 1; i--)
@@ -18,9 +18,9 @@ public class Heap extends SortStructure{
         }
     }
     static void exch(Comparable[] data, int i, int j) {
-        SortStructure.exch(data, i-1, j-1);
+        Sort.exch(data, i-1, j-1);
     }
     static boolean less(Comparable[] data, int i, int j) {
-        return SortStructure.less(data[i-1], data[j-1]);
+        return Sort.less(data[i-1], data[j-1]);
     }
 }

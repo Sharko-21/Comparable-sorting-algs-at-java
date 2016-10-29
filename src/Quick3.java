@@ -1,4 +1,4 @@
-public class Quick3 extends SortStructure{
+public class Quick3 extends Sort {
     public static void sort(Comparable[] data) {
         shuffle(data);
         sort(data, 0, data.length-1);

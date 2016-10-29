@@ -1,7 +1,7 @@
 import java.util.Random;
 
-class SortStructure {
-    private static void sort(Comparable data[]){}
+class Sort {
+    static void sort(Comparable data[]){}
     static boolean less(Comparable v, Comparable w) {
         return v.compareTo(w) < 0;
     }

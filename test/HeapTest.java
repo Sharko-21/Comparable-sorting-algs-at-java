@@ -3,7 +3,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class HeapTest extends SortStructureTest{
+public class HeapTest extends SortTest {
     @Override
     @Before
     public void setUp() throws Exception {

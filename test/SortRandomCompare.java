@@ -29,9 +29,9 @@ public class SortRandomCompare {
     }
 
     public static void main(String[] args) {
-        int t = 10;
+        int t = 100;
         System.out.println("Random numbers test: ");
-        for (int n = 1000; n < Math.pow(2, 100); n*=5) {
+        for (int n = 1000; n < Math.pow(2, 100); n*=2) {
             System.out.println(n + ": ");
             System.out.println("Bubble sort: " + SortRandomCompare.getRandomInputTime("bubble", n, t));
             System.out.println("Selection sort: " + SortRandomCompare.getRandomInputTime("selection", n, t));

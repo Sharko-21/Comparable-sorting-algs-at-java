@@ -1,6 +1,4 @@
-import java.lang.reflect.Array;
-
-public class Merge extends SortStructure{
+public class Merge extends Sort {
     private static Comparable[] aux;
     public static void sort(Comparable[] data) {
         aux = new Comparable[data.length];

@@ -6,7 +6,7 @@ import java.util.Random;
 
 import static org.junit.Assert.*;
 
-public class SortStructureTest {
+public class SortTest {
     Random random;
     int n;
     Comparable[] randInt;
@@ -59,12 +59,12 @@ public class SortStructureTest {
 
     @Test
     public void less() throws Exception {
-        assertFalse(SortStructure.less(3, 0));
-        assertFalse(SortStructure.less('b', 'a'));
-        assertFalse(SortStructure.less("0", "0"));
-        assertFalse(SortStructure.less(1, -1));
-        assertTrue(SortStructure.less("3", "4"));
-        assertTrue(SortStructure.less(-1, 0));
+        assertFalse(Sort.less(3, 0));
+        assertFalse(Sort.less('b', 'a'));
+        assertFalse(Sort.less("0", "0"));
+        assertFalse(Sort.less(1, -1));
+        assertTrue(Sort.less("3", "4"));
+        assertTrue(Sort.less(-1, 0));
 
     }
 
@@ -79,8 +79,8 @@ public class SortStructureTest {
         Comparable[] originalDataInt = dataInt.clone();
         Comparable[] originalDataString = dataString.clone();
         for (int i = 0; i < random.nextInt()+n; i++) {
-            SortStructure.exch(dataInt, random.nextInt(n), random.nextInt(n));
-            SortStructure.exch(dataString, random.nextInt(n), random.nextInt(n));
+            Sort.exch(dataInt, random.nextInt(n), random.nextInt(n));
+            Sort.exch(dataString, random.nextInt(n), random.nextInt(n));
         }
         Arrays.sort(originalDataInt);
         Arrays.sort(originalDataString);
@@ -101,8 +101,8 @@ public class SortStructureTest {
         }
         Arrays.sort(dataInt);
         Arrays.sort(dataString);
-        assertTrue(SortStructure.isSorted(dataInt));
-        assertTrue(SortStructure.isSorted(dataString));
+        assertTrue(Sort.isSorted(dataInt));
+        assertTrue(Sort.isSorted(dataString));
     }
 
     Comparable[] getRandInt() {

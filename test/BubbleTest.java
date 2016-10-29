@@ -1,11 +1,9 @@
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.Arrays;
-
 import static org.junit.Assert.*;
 
-public class BubbleTest extends SortStructureTest {
+public class BubbleTest extends SortTest {
     @Override
     @Before
     public void setUp() throws Exception {

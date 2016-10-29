@@ -3,7 +3,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class Quick3Test extends SortStructureTest{
+public class Quick3Test extends SortTest {
     @Override
     @Before
     public void setUp() throws Exception {

@@ -3,7 +3,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class ShellTest extends SortStructureTest{
+public class ShellTest extends SortTest {
     @Override
     @Before
     public void setUp() throws Exception {

@@ -1,4 +1,4 @@
-public class Shell extends SortStructure{
+public class Shell extends Sort {
     public static void sort(Comparable data[]) {
         int n = data.length;
         int h = 1;
