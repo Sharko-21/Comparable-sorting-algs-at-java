@@ -1,3 +1,5 @@
+package com.github.bvc3at.sort;
+
 public class Shell extends Sort {
     public static void sort(Comparable data[]) {
         int n = data.length;

@@ -1,3 +1,5 @@
+package com.github.bvc3at.sort;
+
 public class Bubble extends Sort {
     public static void sort(Comparable data[]) {
         for (int i = 1; i < data.length; i++) {

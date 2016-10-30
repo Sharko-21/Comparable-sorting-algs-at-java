@@ -1,3 +1,5 @@
+package com.github.bvc3at.sort;
+
 import java.util.Random;
 
 public class SortRandomCompare {

@@ -1,3 +1,5 @@
+package com.github.bvc3at.sort;
+
 public class Quick3 extends Sort {
     public static void sort(Comparable[] data) {
         shuffle(data);

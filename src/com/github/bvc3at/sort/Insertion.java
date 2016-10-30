@@ -1,3 +1,5 @@
+package com.github.bvc3at.sort;
+
 public class Insertion extends Sort {
     public static void sort(Comparable[] data) {
         sort(data, 0, data.length);

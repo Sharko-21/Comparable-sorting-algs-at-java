@@ -1,3 +1,5 @@
+package com.github.bvc3at.sort;
+
 public class MergeBU extends Merge{
     private static Comparable[] aux;
     public static void sort(Comparable[] data) {

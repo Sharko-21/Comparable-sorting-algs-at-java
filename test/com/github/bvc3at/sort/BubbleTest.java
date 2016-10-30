@@ -1,3 +1,5 @@
+package com.github.bvc3at.sort;
+
 import org.junit.Before;
 import org.junit.Test;
 

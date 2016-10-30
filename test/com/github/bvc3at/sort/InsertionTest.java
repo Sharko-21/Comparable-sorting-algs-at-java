@@ -1,9 +1,11 @@
+package com.github.bvc3at.sort;
+
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class Quick3Test extends SortTest {
+public class InsertionTest extends SortTest {
     @Override
     @Before
     public void setUp() throws Exception {
@@ -11,16 +13,16 @@ public class Quick3Test extends SortTest {
     }
 
     @Test
-    public void sort() throws Exception{
+    public void sort() throws Exception {
         setUp();
-        Quick3.sort(randInt);
-        Quick3.sort(randString);
-        Quick3.sort(sortedInt);
-        Quick3.sort(sortedString);
-        Quick3.sort(discretInt);
-        Quick3.sort(discretString);
-        Quick3.sort(invertedInt);
-        Quick3.sort(invertedString);
+        Insertion.sort(randInt);
+        Insertion.sort(randString);
+        Insertion.sort(sortedInt);
+        Insertion.sort(sortedString);
+        Insertion.sort(discretInt);
+        Insertion.sort(discretString);
+        Insertion.sort(invertedInt);
+        Insertion.sort(invertedString);
         assertArrayEquals(randInt, randIntSorted);
         assertArrayEquals(randString, randStringSorted);
         assertArrayEquals(sortedInt, sortedIntSorted);
@@ -29,7 +31,7 @@ public class Quick3Test extends SortTest {
         assertArrayEquals(discretString, discretStringSorted);
         assertArrayEquals(invertedInt, invertedIntSorted);
         assertArrayEquals(invertedString, invertedStringSorted);
-    }
 
+    }
 
 }

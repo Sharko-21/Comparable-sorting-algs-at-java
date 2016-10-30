@@ -1,3 +1,5 @@
+package com.github.bvc3at.sort;
+
 public class Heap extends Sort {
     public static void sort(Comparable[] data) {
         int n = data.length;
@@ -21,6 +23,6 @@ public class Heap extends Sort {
         Sort.exch(data, i-1, j-1);
     }
     static boolean less(Comparable[] data, int i, int j) {
-        return Sort.less(data[i-1], data[j-1]);
+        return less(data[i-1], data[j-1]);
     }
 }

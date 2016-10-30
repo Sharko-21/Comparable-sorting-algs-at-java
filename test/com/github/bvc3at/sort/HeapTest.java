@@ -1,9 +1,11 @@
+package com.github.bvc3at.sort;
+
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class MergeBUTest extends SortTest {
+public class HeapTest extends SortTest {
     @Override
     @Before
     public void setUp() throws Exception {
@@ -13,14 +15,14 @@ public class MergeBUTest extends SortTest {
     @Test
     public void sort() throws Exception {
         setUp();
-        MergeBU.sort(randInt);
-        MergeBU.sort(randString);
-        MergeBU.sort(sortedInt);
-        MergeBU.sort(sortedString);
-        MergeBU.sort(discretInt);
-        MergeBU.sort(discretString);
-        MergeBU.sort(invertedInt);
-        MergeBU.sort(invertedString);
+        Heap.sort(randInt);
+        Heap.sort(randString);
+        Heap.sort(sortedInt);
+        Heap.sort(sortedString);
+        Heap.sort(discretInt);
+        Heap.sort(discretString);
+        Heap.sort(invertedInt);
+        Heap.sort(invertedString);
         assertArrayEquals(randInt, randIntSorted);
         assertArrayEquals(randString, randStringSorted);
         assertArrayEquals(sortedInt, sortedIntSorted);
@@ -31,5 +33,4 @@ public class MergeBUTest extends SortTest {
         assertArrayEquals(invertedString, invertedStringSorted);
 
     }
-
 }

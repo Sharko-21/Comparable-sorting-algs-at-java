@@ -1,3 +1,5 @@
+package com.github.bvc3at.sort;
+
 public class Selection extends Sort {
 
      public static void sort(Comparable data[]) {
